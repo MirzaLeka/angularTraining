@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   cars = [
     {name: 'Golf', age: 1994 },
@@ -19,12 +19,5 @@ export class AppComponent implements OnInit {
     {name: 'Renault', age: 1999 }
   ]
   
-  search(event) {
-    console.log(event.target.value);
-  }
-
-  ngOnInit() {
-
-  }
 
 }

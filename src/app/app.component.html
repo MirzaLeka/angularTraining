@@ -1,7 +1,7 @@
 
 <div class="container">
   <form class="form-group">
-    <input class="input-group" placeholder="search" (keydown)="search($event)"/>
+    <input type="text" class="input-group" placeholder="search" name="term" [(ngModel)]="term"/>
   </form>
 </div>
 
@@ -9,7 +9,7 @@
 
 <div class="container">    
   <div class="row">
-    <div class="col-sm-3" *ngFor="let product of cars" style="margin-bottom: 30px;">
+    <div class="col-sm-3" *ngFor="let product of cars | filter:term" style="margin-bottom: 30px;">
      
       <div class="card" >
         <img class="card-img-top" src="https://images.pexels.com/photos/1616472/pexels-photo-1616472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
