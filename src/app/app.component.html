@@ -1,31 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
 
-<div class="container">
-  <form class="form-group">
-    <input type="text" class="input-group" placeholder="search" name="term" [(ngModel)]="term"/>
-  </form>
-</div>
+<form>
+My form!
 
-<br/>
+<app-form></app-form>
 
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-3" *ngFor="let product of cars | filter:term" style="margin-bottom: 30px;">
-     
-      <div class="card" >
-        <img class="card-img-top" src="https://images.pexels.com/photos/1616472/pexels-photo-1616472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{product.name}}</h5>
-          <p class="card-text">Product description + age: {{product.age}}</p>
-          <a href="#" class="btn btn-primary" style="width: 100%">Explore</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
+</form>
 
 <router-outlet></router-outlet>

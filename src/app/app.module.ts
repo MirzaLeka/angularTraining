@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FilterPipe } from './filter.pipe';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilterPipe
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    FormComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
